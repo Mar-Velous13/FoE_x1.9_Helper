@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A43B89BB-5F6E-420D-8EBC-9BFF8F17C6E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>foe_calc_base</RootNamespace>
+    <AssemblyName>foe_calc_base</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\images\icon3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.119.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.119.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.6.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.6.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.6.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.6.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.6.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DBManager.cs" />
+    <Compile Include="Forms\Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Guide.Designer.cs">
+      <DependentUpon>Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GB.cs" />
+    <Compile Include="Model\GBLevel.cs" />
+    <Compile Include="Objects\UserData.cs" />
+    <Compile Include="ViewModel\GBLevel_VM.cs" />
+    <Compile Include="ViewModel\GB_VM.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Database\foe_data_base.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\images\A.I._Core.webp" />
+    <None Include="Resources\images\Alcatraz.webp" />
+    <None Include="Resources\images\Arctic_Orangery.webp" />
+    <None Include="Resources\images\Atlantis_Museum.webp" />
+    <None Include="Resources\images\Atomium.webp" />
+    <None Include="Resources\images\Cape_Canaveral.webp" />
+    <None Include="Resources\images\Capitol.webp" />
+    <None Include="Resources\images\Castel_del_Monte.webp" />
+    <None Include="Resources\images\Cathedral_of_Aachen.webp" />
+    <None Include="Resources\images\Cathedral_of_St._Basil.webp" />
+    <None Include="Resources\images\Chateau_Frontenac.webp" />
+    <None Include="Resources\images\Colosseum.webp" />
+    <None Include="Resources\images\Cosmic_Catalyst.webp" />
+    <None Include="Resources\images\DealCastle.webp" />
+    <None Include="Resources\images\Dresdennew.webp" />
+    <None Include="Resources\images\Flying_Island.webp" />
+    <None Include="Resources\images\Gaea_Statue.webp" />
+    <None Include="Resources\images\Galata_Tower.webp" />
+    <None Include="Resources\images\Hagia_Sophia.webp" />
+    <None Include="Resources\images\HimejiCastle.webp" />
+    <None Include="Resources\images\Innovation_Tower.webp" />
+    <None Include="Resources\images\LighthouseAlexandria.webp" />
+    <None Include="Resources\images\Lotus_Temple.webp" />
+    <None Include="Resources\images\Notre_Dame.webp" />
+    <None Include="Resources\images\Observatory.webp" />
+    <None Include="Resources\images\Oracle_of_Delphi.webp" />
+    <None Include="Resources\images\Rain_Forest_Project.webp" />
+    <None Include="Resources\images\Royalalberthall.webp" />
+    <None Include="Resources\images\Saturn_VI_Gate_CENTAURUS.webp" />
+    <None Include="Resources\images\Saturn_VI_Gate_HYDRA.webp" />
+    <None Include="Resources\images\Saturn_VI_Gate_PEGASUS.webp" />
+    <None Include="Resources\images\Seed_Vault.webp" />
+    <None Include="Resources\images\Space_Carrier.webp" />
+    <None Include="Resources\images\Space_Needle.webp" />
+    <None Include="Resources\images\St._Mark%27s_Basilica.webp" />
+    <None Include="Resources\images\Star_Gazer.webp" />
+    <None Include="Resources\images\Statue_of_Zeus.webp" />
+    <None Include="Resources\images\Stellar_Warship.webp" />
+    <None Include="Resources\images\Temple_of_Relics.webp" />
+    <None Include="Resources\images\Terracotta_Army.webp" />
+    <None Include="Resources\images\The_Arc.webp" />
+    <None Include="Resources\images\The_Blue_Galaxy.webp" />
+    <None Include="Resources\images\The_Habitat.webp" />
+    <None Include="Resources\images\The_Kraken.webp" />
+    <None Include="Resources\images\The_Virgo_Project.webp" />
+    <None Include="Resources\images\Tower_of_Babel.webp" />
+    <None Include="Resources\images\Truce_Tower.webp" />
+    <None Include="Resources\images\Voyager_V1.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\icon4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\images\A.I._Core.png" />
+    <Resource Include="Resources\images\Alcatraz.png" />
+    <Resource Include="Resources\images\Arctic_Orangery.png" />
+    <Resource Include="Resources\images\Atlantis_Museum.png" />
+    <Resource Include="Resources\images\Atomium.png" />
+    <Resource Include="Resources\images\Cape_Canaveral.png" />
+    <Resource Include="Resources\images\Capitol.png" />
+    <Resource Include="Resources\images\Castel_del_Monte.png" />
+    <Resource Include="Resources\images\Cathedral_of_Aachen.png" />
+    <Resource Include="Resources\images\Cathedral_of_St._Basil.png" />
+    <Resource Include="Resources\images\Chateau_Frontenac.png" />
+    <Resource Include="Resources\images\Colosseum.png" />
+    <Resource Include="Resources\images\Cosmic_Catalyst.png" />
+    <Resource Include="Resources\images\DealCastle.png" />
+    <Resource Include="Resources\images\Dresdennew.png" />
+    <Resource Include="Resources\images\Flying_Island.png" />
+    <Resource Include="Resources\images\foeGuide.PNG" />
+    <Resource Include="Resources\images\foeGuide2.png" />
+    <Resource Include="Resources\images\Gaea_Statue.png" />
+    <Resource Include="Resources\images\Galata_Tower.png" />
+    <Resource Include="Resources\images\guide.PNG" />
+    <Resource Include="Resources\images\guide2.png" />
+    <Resource Include="Resources\images\gui_day.png" />
+    <Resource Include="Resources\images\gui_night.png" />
+    <Resource Include="Resources\images\Hagia_Sophia.png" />
+    <Resource Include="Resources\images\HimejiCastle.png" />
+    <Resource Include="Resources\images\icon2.ico" />
+    <Resource Include="Resources\images\icon3.ico" />
+    <Resource Include="Resources\images\icon_info.png" />
+    <Resource Include="Resources\images\icon_quest.png" />
+    <Resource Include="Resources\images\Innovation_Tower.png" />
+    <Resource Include="Resources\images\LighthouseAlexandria.png" />
+    <Resource Include="Resources\images\logo.jpeg" />
+    <Resource Include="Resources\images\logo2.jpeg" />
+    <Resource Include="Resources\images\logo3.jpg" />
+    <Resource Include="Resources\images\logo3_2.png" />
+    <Resource Include="Resources\images\Lotus_Temple.png" />
+    <Resource Include="Resources\images\Notre_Dame.png" />
+    <Resource Include="Resources\images\Observatory.png" />
+    <Resource Include="Resources\images\Oracle_of_Delphi.png" />
+    <Resource Include="Resources\images\Rain_Forest_Project.png" />
+    <Resource Include="Resources\images\Royalalberthall.png" />
+    <Resource Include="Resources\images\Saturn_VI_Gate_CENTAURUS.png" />
+    <Resource Include="Resources\images\Saturn_VI_Gate_HYDRA.png" />
+    <Resource Include="Resources\images\Saturn_VI_Gate_PEGASUS.png" />
+    <Resource Include="Resources\images\Seed_Vault.png" />
+    <Resource Include="Resources\images\Space_Carrier.png" />
+    <Resource Include="Resources\images\Space_Needle.png" />
+    <Resource Include="Resources\images\St._Marks_Basilica.png" />
+    <Resource Include="Resources\images\Star_Gazer.png" />
+    <Resource Include="Resources\images\Statue_of_Zeus.png" />
+    <Resource Include="Resources\images\Stellar_Warship.png" />
+    <Resource Include="Resources\images\Temple_of_Relics.png" />
+    <Resource Include="Resources\images\Terracotta_Army.png" />
+    <Resource Include="Resources\images\The_Arc.png" />
+    <Resource Include="Resources\images\The_Blue_Galaxy.png" />
+    <Resource Include="Resources\images\The_Habitat.png" />
+    <Resource Include="Resources\images\The_Kraken.png" />
+    <Resource Include="Resources\images\The_Virgo_Project.png" />
+    <Resource Include="Resources\images\Tower_of_Babel.png" />
+    <Resource Include="Resources\images\Truce_Tower.png" />
+    <Resource Include="Resources\images\Voyager_V1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>

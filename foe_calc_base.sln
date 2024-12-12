@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.35431.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "foe_calc_base", "foe_calc_base\foe_calc_base.csproj", "{A43B89BB-5F6E-420D-8EBC-9BFF8F17C6E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A43B89BB-5F6E-420D-8EBC-9BFF8F17C6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43B89BB-5F6E-420D-8EBC-9BFF8F17C6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43B89BB-5F6E-420D-8EBC-9BFF8F17C6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43B89BB-5F6E-420D-8EBC-9BFF8F17C6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBC0A191-67BF-47E4-B540-90D75D4AD000}
+	EndGlobalSection
+EndGlobal
