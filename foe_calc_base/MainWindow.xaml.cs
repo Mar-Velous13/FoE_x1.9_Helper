@@ -46,7 +46,7 @@ namespace foe_calc_base
             SetCheckBoxes();
             this.initConcluded = true;//used to prevent triggering events before everything has been loaded correctly
             UpdateOutputString();
-            DisplayGuide(false);
+            DisplayGuide(false);//force show guide?
         }
 
 
@@ -83,6 +83,7 @@ namespace foe_calc_base
                 outputString[4],
                 outputString[5],
                 outputString[6]);
+            //Prefix, GB name/shortName, P5, P4, P3, P2, P1
         }
 
         GB FindLastGB(string lastGB)
@@ -113,7 +114,6 @@ namespace foe_calc_base
             tableData.Items.Refresh();
         }
 
-
         /* Hide or display guide for user*/
         void DisplayGuide(bool requested)
         {
@@ -126,6 +126,8 @@ namespace foe_calc_base
             }
             else if (requested == true) guide.showGuide();
         }
+
+
 
         /* ========================================== CLICK and etc. EVENTS =====================================*/
 
@@ -143,7 +145,6 @@ namespace foe_calc_base
             ud.Last_GB = temp_gb.ShortName;
             db.WriteUserData(3, ud);
             outputString[1] = (CheckShort.IsChecked == true) ? ud.Last_GB : FindLastGB(ud.Last_GB).Name;
-
 
             //GB has changed so we need to load correct leveling data for it
             gbl_vm.ReloadLevels(db, temp_gb.Age);
@@ -212,7 +213,7 @@ namespace foe_calc_base
 
 
         private void TableData_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {//Event triggered when user CLICKS ON ROW a.k.a. string generation
+        {//Event triggered when user CLICKS ON A ROW a.k.a. string generation
             GBLevel gbl = (GBLevel)tableData.SelectedItem;
             if (gbl == null) return;//was triggered when changing great building from the list, caused error
 
@@ -242,7 +243,7 @@ namespace foe_calc_base
 
         private void QuestionButton_Click(object sender, RoutedEventArgs e)
         {
-            DisplayGuide(true);
+            DisplayGuide(true);//force to show guide?
         }
 
 

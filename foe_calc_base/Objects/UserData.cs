@@ -14,14 +14,16 @@ namespace foe_calc_base.Objects
         char[] positionValues;
         bool showGuide = false;
 
+        //constructor
         public UserData(string pre, int shortF, int pos, string gb, int guide)
         {
-            this.Positions = pos;
+            this.Positions = pos;//e.g. 11111 - each digit corresponds to certain position (P5,P4,P3,P2,P1)
             this.DisplayShort = shortF;
             this.Prex = pre;
             this.Last_GB = gb;
             this.DisplayGuide = guide;
         }
+
         /* Getters and Setters */
         public int Positions
         {

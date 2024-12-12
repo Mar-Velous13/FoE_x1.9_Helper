@@ -3,9 +3,6 @@ using foe_calc_base.Objects;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace foe_calc_base.Database
 {
@@ -92,7 +89,7 @@ namespace foe_calc_base.Database
 
 
         public UserData GetUserData()
-        {/* Get user data - last visited GB and level he generate string for */
+        {/* Get user data - prefix, toggle shortName, positions, lastGB, toggle guide */
             query = "select * from user_data";
             sql_command = new SQLiteCommand(query, conn);
             try { reader = sql_command.ExecuteReader(); }
@@ -106,7 +103,7 @@ namespace foe_calc_base.Database
 
 
         public void WriteUserData(int state, UserData ud)
-        {/* There was a show/hide contribution checkbox earlier but was removed (hence 2-contribution)*/
+        {//update each and every userData field
             switch (state)
             {
                 case 0: query = "UPDATE user_data SET prefix = '" + ud.Prex + "' WHERE id = 1"; break;
@@ -127,20 +124,10 @@ namespace foe_calc_base.Database
             sql_command = new SQLiteCommand(query, conn);
             try { var updateRow = sql_command.ExecuteNonQuery(); }
             catch (Exception e) { Console.WriteLine(e.Message); }
-            //Console.WriteLine(string.Format("[DB_Update_Level] \t {0}", query));
-        }
-
-        public void Update_GB_ShortName(string gb, string shortName)
-        {/* called when user changes abbrevation field value */
-            query = "UPDATE age_gb SET gb_short = '" + shortName + "' WHERE gb_short='" + gb + "'";
-            sql_command = new SQLiteCommand(query, conn);
-            try { var updateRow = sql_command.ExecuteNonQuery(); }
-            catch (Exception e) { Console.WriteLine(e.Message); }
-            //Console.WriteLine(string.Format("[DB_Update_SHORTFORM] \t {0}", query));
         }
 
         public int Get_GB_Level(string gb)
-        {/* table should scroll user to the last level he clicked on specific GB */
+        {/* table should scroll user to the last level he clicked on specific GB (not yet implemented) */
             query = "select * from age_gb WHERE gb_short ='" + gb + "'";
             sql_command = new SQLiteCommand(query, conn);
             try { reader = sql_command.ExecuteReader(); }
