@@ -6,10 +6,10 @@ A simple alternative for all the websites and plugins that offer similar functio
 + Shows FP required both for taking the position and securing it in a Great Building (GB)
 + Allows to adjust generated outcome
 + Generates the outcome upon clicking a specific level/row in the table
-+ Available for all Windows Operating Systems with .NET 4+ installed (Windows 10 and higher OS have it installed by default)
++ Available for all Windows Operating Systems with .NET Framework 4.5+ installed (Windows 10 and higher OS have it installed by default)
 	
 ## Usage
-* For Windows 8 and below user might need to install [.NET 4 or higher](https://dotnet.microsoft.com/en-us/download) manually
+* For Windows 8 and below user might need to install [.NET Framework 4.5 or higher](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) manually
 1. For using the application only download "Release.zip" (don't have to download the whole project)
 2. Unzip it and start "foe_calc.exe". Keep in mind that the application should have access to the rest of files found in the folder at all times. You can create a shortcut for "foe_calc.exe" and move it to desktop for quicker access
 3. Choose your Great Building (GB) from the list
