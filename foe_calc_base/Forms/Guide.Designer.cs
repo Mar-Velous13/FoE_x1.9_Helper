@@ -58,10 +58,10 @@ namespace foe_calc_base.Forms
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Guide";
-            this.Text = "Simple guide on how to use the application!";
+            this.Text = "User Manual!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.Icon = Properties.Resources.icon3;
+            this.Icon = Properties.Resources.icon4;
 
         }
 

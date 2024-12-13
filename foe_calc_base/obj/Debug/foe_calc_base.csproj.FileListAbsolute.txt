@@ -1,3 +1,4 @@
+C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\Database\foe_data_base.db
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\foe_calc_base.exe.config
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\foe_calc_base.exe
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\foe_calc_base.pdb
@@ -27,10 +28,11 @@ C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\ro\Xcee
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.csprojAssemblyReference.cache
+C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\MainWindow.g.cs
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\App.g.cs
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base_MarkupCompile.cache
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base_MarkupCompile.lref
+C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\MainWindow.baml
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.g.resources
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.Properties.Resources.resources
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.csproj.GenerateResource.cache
@@ -38,6 +40,3 @@ C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_cal
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.csproj.CopyComplete
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.exe
 C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\foe_calc_base.pdb
-C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\MainWindow.g.cs
-C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\obj\Debug\MainWindow.baml
-C:\Users\The\Documents\C# Projects\foe_calc_base\foe_calc_base\bin\Debug\Database\foe_data_base.db
