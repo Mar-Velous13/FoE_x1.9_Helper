@@ -1,4 +1,4 @@
-# Forge of Empires (FoE) calculator/string generator for "x1.9 thread"
+# Forge of Empires (FoE) "x1.9 Threads" Helper
 A simple alternative for all the websites and plugins that offer similar functionality however it grants wider insight on the levels ahead and allows to generate the information easier.
 
 ## Features
