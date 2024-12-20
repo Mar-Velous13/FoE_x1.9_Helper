@@ -8,9 +8,9 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("foe_calc_base")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Simple and easy-to-use application to help generate info for x1.9 threads quickly")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Mar")]
 [assembly: AssemblyProduct("foe_calc_base")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
